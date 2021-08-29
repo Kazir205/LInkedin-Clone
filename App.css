@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .4s all;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f2ef;
+}
+
+.appBody {
+  display: flex;
+  padding:0 100px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .appBody {
+    padding: 0 20px;
+  }    
+}

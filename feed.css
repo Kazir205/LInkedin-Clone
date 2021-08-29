@@ -1,0 +1,144 @@
+.feed {
+  flex: 0.6;
+  margin: 50px 20px 0 20px;
+}
+
+.messageBox {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  padding: 10px 15px 5px 15px;
+  z-index: 10;
+}
+
+.feedTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.feedTop form {
+  width: 90%;
+}
+
+.feedTop input {
+  width: 100%;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid rgb(173, 173, 173);
+  padding: 10px 15px;
+  transition: 0.3s background-color;
+}
+
+.feedTop input:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.feedTop input::placeholder {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.messageBox__avatar {
+  width: 50px !important;
+  height: 50px !important;
+  margin-right: 10px;
+}
+
+.feedBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: gray;
+  padding: 15px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s background-color;
+}
+
+.iconBox:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.iconBox > .MuiSvgIcon-root {
+  margin-right: 12px;
+}
+
+.addPhotoIcon {
+  color: #70b5f9 !important;
+}
+
+.playVideoIcon {
+  color: white;
+  background-color: #86c367;
+  width: 17px !important;
+  height: 17px !important;
+  border-radius: 2px;
+}
+
+.eventIcon {
+  color: #e7ab52;
+}
+
+.articleIcon {
+  color: #fc9295;
+}
+
+.post__header {
+  display: flex;
+  justify-items: flex-start;
+}
+
+.postAvatar {
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.avater__right {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  margin-left: 5px;
+}
+
+.postName {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(95, 95, 95);
+}
+
+.avater__right p {
+  font-size: 12px;
+  color: gray;
+}
+
+.post__body {
+  padding: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .feed {
+    flex: .8;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feed {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .feed {
+    width: 100%;
+  }
+}

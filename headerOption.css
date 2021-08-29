@@ -1,0 +1,63 @@
+.headerOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.headerOption:hover {
+    outline: none;
+    border: none;
+    background-color: none;
+}
+
+.headerOption:hover > .icon > .headerOption__icon,.headerOption:hover > .headerOption__title {
+    color: black;
+}
+
+.headerOption:nth-child(1) > .headerOption__icon,.headerOption:nth-child(1) > .headerOption__title {
+    color: black;
+}
+
+.headerOption:nth-child(1) {
+    border-bottom: 2px solid blackp;
+}
+
+
+.header__right {
+    display: flex;
+}
+
+.icon {
+    position: relative;
+}
+
+/* .notiNumber {
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -10px;
+    color: red;
+    z-index: 10;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+} */
+
+.headerOption__title {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.headerOption__avatar {
+    object-fit: contain;
+    height: 25px !important;
+    width: 25px !important;
+}
